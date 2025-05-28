@@ -4,63 +4,118 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Samtech Electronics</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-      background: #f9f9f9;
-      color: #333;
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f4f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
     header {
-      background: #004080;
+      background: linear-gradient(135deg, #004080, #0066cc);
       color: white;
-      padding: 15px 20px;
+      padding: 20px;
       display: flex;
       align-items: center;
-      gap: 15px;
+      justify-content: space-between;
+      padding-inline: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
+
     header img.logo {
-      height: 50px;
-      width: auto;
+      height: 60px;
     }
+
     header h1 {
-      margin: 0;
       font-size: 1.8rem;
+      font-weight: 600;
     }
+
     .banner {
       background: url('banner.jpg') center/cover no-repeat;
-      height: 300px;
+      height: 350px;
       display: flex;
       align-items: center;
       justify-content: center;
+      position: relative;
+    }
+
+    .banner::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    .banner h2 {
+      position: relative;
       color: white;
-      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
-      font-size: 2.4rem;
-      font-weight: bold;
+      font-size: 2.5rem;
+      text-align: center;
+      padding: 0 20px;
+      text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
     }
+
     main {
-      padding: 20px;
-      max-width: 900px;
-      margin: 0 auto;
       background: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      margin-top: 20px;
-      border-radius: 8px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+      max-width: 1000px;
     }
+
     main h2 {
       color: #004080;
+      margin-bottom: 15px;
+      font-size: 1.6rem;
     }
-    main p {
-      line-height: 1.6;
-      font-size: 1.1rem;
+
+    main p, main ul {
+      font-size: 1.05rem;
+      margin-bottom: 20px;
     }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
     footer {
       background: #004080;
       color: white;
       text-align: center;
-      padding: 12px 10px;
-      margin-top: 30px;
-      font-size: 0.9rem;
+      padding: 15px;
+      font-size: 0.95rem;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+      }
+
+      .banner h2 {
+        font-size: 1.8rem;
+      }
+
+      main {
+        margin: 20px;
+        padding: 20px;
+      }
     }
   </style>
 </head>
@@ -71,24 +126,24 @@
   </header>
 
   <section class="banner">
-    Affordable Electronics Engineering Services At Your Comfort
+    <h2>Affordable Electronics Engineering Services At Your Comfort</h2>
   </section>
 
   <main>
     <h2>About Us</h2>
-    <p>Welcome to Samtech Electronics, your trusted electronics engineering company. We specialize in selling, repairing, servicing, and building electronics designed for the best performance and durability.</p>
+    <p>Welcome to <strong>Samtech Electronics</strong>, your trusted electronics engineering company. We specialize in selling, repairing, servicing, and building electronics designed for the best performance and durability.</p>
 
     <p>Our mission is to provide affordable and convenient solutions so you can enjoy high-quality electronics without the hassle. Whether you want to sell your device, repair a faulty one, or build a custom solution, we bring the expertise and care right to your doorstep.</p>
 
     <h2>What We Offer</h2>
     <ul>
-      <li>Electronics sales: Get quality devices at competitive prices.</li>
-      <li>Repair services: Fast and reliable repair work for your electronics.</li>
-      <li>Servicing: Routine maintenance to keep your devices running smoothly.</li>
-      <li>Custom builds: Tailored electronic solutions to meet your needs.</li>
+      <li><strong>Electronics Sales:</strong> Get quality devices at competitive prices.</li>
+      <li><strong>Repair Services:</strong> Fast and reliable repair work for your electronics.</li>
+      <li><strong>Servicing:</strong> Routine maintenance to keep your devices running smoothly.</li>
+      <li><strong>Custom Builds:</strong> Tailored electronic solutions to meet your needs.</li>
     </ul>
 
-    <p>Contact us today to experience affordable, professional, and customer-friendly electronics services.</p>
+    <p>📞 Contact us today to experience affordable, professional, and customer-friendly electronics services.</p>
   </main>
 
   <footer>
